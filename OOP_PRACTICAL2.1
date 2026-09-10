@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class Student
+{
+    int rollNo;
+
+public:
+    void setRollNo(int r);
+    void display();
+};
+
+// Member function defined outside the class
+void Student::setRollNo(int r)
+{
+    rollNo = r;
+}
+
+void Student::display()
+{
+    cout << "Roll Number: " << rollNo << endl;
+}
+
+int main()
+{
+    Student s;
+
+    s.setRollNo(101);
+    s.display();
+
+    return 0;
+}
